@@ -73,10 +73,11 @@ button:hover {
     column-gap: 20px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .main-frame {
     margin: auto;
     grid-template-columns: 1fr;
+    margin-top:10px;
     margin-bottom: 30px;
   }
   .left-col {
@@ -85,8 +86,12 @@ button:hover {
     padding-left: 30px;
   }
   .right-col {
+    margin-left:5px;
     justify-self: start;
     text-align: left;
     padding-left: 30px;
+  }
+  input{
+    padding-left:10px;
   }
 }
