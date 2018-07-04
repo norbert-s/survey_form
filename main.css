@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alef|Metrophobic');
 * {
+  margin: 0;
+  padding: 0;
   font-family: 'Alef', sans-serif;
 }
 body {
@@ -32,12 +34,12 @@ main {
   row-gap: 10px;
   column-gap: 10px;
 }
-.right-col {
+.left-col {
   justify-self: end;
   margin-right: 5px;
   text-align: right;
 }
-.left-col {
+.right-col {
   justify-self: start;
   margin-left: 5px;
   align-self: center;
@@ -77,12 +79,12 @@ button:hover {
     grid-template-columns: 1fr;
     margin-bottom: 30px;
   }
-  .right-col {
+  .left-col {
     justify-self: start;
     text-align: left;
     padding-left: 30px;
   }
-  .left-col {
+  .right-col {
     justify-self: start;
     text-align: left;
     padding-left: 30px;
