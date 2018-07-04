@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Alef|Metrophobic');
+* {
+  font-family: 'Alef', sans-serif;
+}
+body {
+  background: #3fb6bf;
+}
+#description {
+  padding: 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.align-center {
+  text-align: center;
+}
+main {
+  margin: auto;
+  width: 80%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 3px 2px;
+}
+.main-frame {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 80%;
+  padding: 10px 0 20px 0;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.right-col {
+  justify-self: end;
+  margin-right: 5px;
+  text-align: right;
+}
+.left-col {
+  justify-self: start;
+  margin-left: 5px;
+  align-self: center;
+}
+input {
+  margin-right: 10px;
+}
+textarea {
+  height: 70px;
+  border-radius: 5px;
+}
+#submit-button {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+button {
+  justify-self: center;
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: #00bfff;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 2px 3px;
+}
+button:hover {
+  background-color: #0080ff;
+}
+@media (max-width: 900px) {
+  .main-frame {
+    column-gap: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .main-frame {
+    margin: auto;
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
+  }
+  .right-col {
+    justify-self: start;
+    text-align: left;
+    padding-left: 30px;
+  }
+  .left-col {
+    justify-self: start;
+    text-align: left;
+    padding-left: 30px;
+  }
+}
