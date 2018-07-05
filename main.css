@@ -7,6 +7,9 @@
 body {
   background: #3fb6bf;
 }
+#title{
+  margin:50px 0;
+}
 #description {
   padding: 30px;
   font-size: 1.5em;
@@ -42,12 +45,18 @@ main {
   justify-self: start;
   align-self: center;
 }
-input[type=radio], input[type=checkbox] {
-  margin-right: 10px;
+input[type=radio],input[type=checkbox]{
+  margin-right:10px;
 }
 textarea {
   height: 70px;
   border-radius: 5px;
+}
+input.mobile,textarea.mobile{
+  width:25vw;
+}
+textarea.mobile{
+  
 }
 #submit-button {
   margin: auto;
@@ -63,49 +72,50 @@ button {
   border-radius: 5px;
   box-shadow: 2px 3px;
 }
-button:hover {
-  background-color: #0080ff;
-}
 @media (max-width: 900px) {
   .main-frame {
     column-gap: 20px;
   }
 }
 @media (max-width: 600px) {
-  main {
-    width: 100%;
-    min-width: 150px;
+  main{
+    width:100%;
+    min-width:200px;
   }
   .main-frame {
-    max-width: 95%;
-    min-width: 200px;
+    width:95%;
+    
     margin: auto;
     grid-template-columns: 1fr;
-    margin-top: 10px;
+    justify-content:space-evenly;
+    margin-top:10px;
     margin-bottom: 30px;
   }
+  main{
+    border-radius:0px;
+    box-shadow:none;
+  }
   .left-col {
-    width: 95%;
-    justify-self: start;
+    width:95%;
+    justify-self:center;
     text-align: left;
-    padding-left: 10px;
   }
   .right-col {
-    width: 91%;
-    justify-self: start;
+    width:95%;
+    justify-self:center;
     text-align: left;
-    padding-left: 10px;
   }
-  input {
-    padding-left: 10px;
+  input{
+    padding-left:10px;
+    }
+  .right-col>input.mobile{
+    width:92%;
   }
-  .right-col > input.mobile {
-    width: 96%;
+  .right-col>select.mobile,textarea.mobile{
+    width:100%;
   }
-  .right-col > select.mobile, textarea.mobile {
-    width: 99%;
+  button{
+    width:95%;
   }
-  button {
-    width: 90%;
-  }
+ 
 }
